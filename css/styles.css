@@ -22,8 +22,9 @@ body{
 
 /*! Globales */
 .contenedor{
-    max-width: 120rem;
-    width: 90%;
+    /* max-width: 120rem;
+    width: 90%; */
+    width: min( 90%, 120rem); /*! Aplica el valor minimo de la resolucion (Lo mismo de arriba) */
     margin: 0 auto;
 }
 a{
@@ -104,6 +105,9 @@ img{
 }
 
 /*! Navegacion */
+.barra{
+    padding-top: 3rem;
+}
 @media (min-width: 768px) {
     .barra{
         display: flex;
@@ -172,4 +176,11 @@ img{
 .widget-curso__info,
 .wifget-curso__label{
     font-weight: 2rem;
+}
+
+/*! Footer */
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }
