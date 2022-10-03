@@ -99,6 +99,9 @@ img{
 .boton--primario{
     background-color: var(--negro);
 }
+.boton--secundario{
+    background-color: var(--primario);
+}
 
 /*! Navegacion */
 @media (min-width: 768px) {
@@ -145,4 +148,28 @@ img{
 .entrada:last-of-type{
     border: none;
     margin-bottom: 0;
+}
+
+/*! Barra lateral */
+.cursos{
+    list-style: none;
+}
+.widget-curso{
+    border-bottom: 1px solid var(--claro);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.wifget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+.widget-curso__info{
+    font-weight: 200;
+}
+.widget-curso__info,
+.wifget-curso__label{
+    font-weight: 2rem;
 }
