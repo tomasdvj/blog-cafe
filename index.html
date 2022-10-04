@@ -13,6 +13,7 @@
     <link rel="preload" href="css/styles.css">
     <link rel="stylesheet" href="css/styles.css">
 
+    <!--! Prefetch para precargar paginas que se podría meter el usuario (normalmente se usa en conjunto con google analytics)-->
     <link rel="prefetch" href="nosotros.html" as="document">
     <link rel="prefetch" href="contacto.html" as="document">
     <link rel="prefetch" href="cursos.html" as="document">
@@ -42,7 +43,10 @@
             <h3>Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 
                 <div class="entrada__contenido">
@@ -53,7 +57,10 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 
                 <div class="entrada__contenido">
@@ -64,7 +71,10 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 
                 <div class="entrada__contenido">
